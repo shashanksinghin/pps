@@ -5,5 +5,5 @@ COPY ./src/scripts/startApp.sh startApp.sh
 RUN exec chmod 755 startApp.sh
 EXPOSE 8082
 
-#ENTRYPOINT ["./startApp.sh"]
-CMD ["sh", "-c", "tail -f /dev/null"]
+ENTRYPOINT ["./startApp.sh"]
+#CMD ["sh", "-c", "tail -f /dev/null"]
